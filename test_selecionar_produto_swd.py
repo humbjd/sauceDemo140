@@ -27,3 +27,7 @@ class Test_Products():
         assert self.driver.find_element(By.CSS_SELECTOR, 'span.title').text == 'Products'   # checa o elemento está escrito Products
         assert self.driver.find_element(By.ID, 'item_4_title_link').text == 'Sauce Labs Backpack' # confirma se é a mochila
         assert self.driver.find_element(By.CSS_SELECTOR, '.inventory_item:nth-child(1) .inventory_item_price').text == '$29.99' # confere preço
+        self.driver.find_element(By.ID, 'add-to-cart-sauce-labs-backpack').click()
+        assert self.driver.find_element(By.CSS_SELECTOR, 'span.class').text == '1'
+        self.driver.find_element(By.CSS_SELECTOR, "shopping_cart_badge").click()
+        
