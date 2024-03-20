@@ -1,7 +1,7 @@
 # README - Projeto sauceDemo140
 
 ## Descrição
-Este é um projeto desenvolvido por humbjd utilizando Python e Pytest para realizar testes automatizados na aplicação web SauceDemo.
+Este é um projeto desenvolvido por humbjd utilizando Python e Pytest para realizar testes automatizados na aplicação web SauceDemo e Giuliana Flores como parte dos exercícios da Formação de Teste de Software da Instituição Iterasys
 
 ## Funcionalidades
 - Realização de testes automatizados na aplicação web SauceDemo.
