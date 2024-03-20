@@ -19,6 +19,8 @@ class Test_Fluxo_Compra():
 
     def test_fluxo_compra(self):
 
+        # Obs: Não consegui implemetar a biblioteca Faker, apresentou diversos erros seguindo tutoriais no youtube
+
         nome_boas_vindas = 'Quentin'
         email_fake = 'yuma2876@uorak.com'
         senha_valida = 'Teste@123'
@@ -33,7 +35,7 @@ class Test_Fluxo_Compra():
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_txtPassword').send_keys(senha_valida)
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_ibtContinue').click()
         self.driver.find_element(By.CSS_SELECTOR, '#perfil-hidden').click()
-        assert self.driver.find_element(By.CSS_SELECTOR, '#lblWelcome').text == (f'Boa Noite, {nome_boas_vindas}!')
+        assert self.driver.find_element(By.CSS_SELECTOR, '#lblWelcome').text == (f'Bom Dia, {nome_boas_vindas}!') # Alterar mensagem conforme horario do dia
 
 
         #self.driver.get(self.url)
@@ -43,12 +45,11 @@ class Test_Fluxo_Compra():
         assert self.driver.find_element(By.CSS_SELECTOR, '#lblIdProduct').text == 'Cód. Produto: 32212'
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_txtZip').send_keys(CEP)
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_lbtBuy').click()
-        self.driver.find_element(By.XPATH, '//body[1]/form[1]/div[3]/div[4]/div[7]/div[1]/div[2]/div[10]/div[3]/div[6]/div[1]/ul[1]/li[2]/input[1]').click()
+        self.driver.find_element(By.XPATH, '/html[1]/body[1]/form[1]/div[3]/main[1]/div[6]/div[1]/div[2]/div[10]/div[3]/div[6]/div[1]/ul[1]/li[1]/input[1]').click()
         self.driver.find_element(By.CSS_SELECTOR, '#btConfirmShippingData').click()
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_lbtBuy').click()
-        #assert self.driver.find_element(By.CSS_SELECTOR, '#imgBasket').text == 'Carrinho'
-        self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_Basketcontrol1_rptBasket_imbFinalize_0').click()
-
+        assert self.driver.find_element(By.CSS_SELECTOR, 'form:nth-child(4) div.giuliana2013:nth-child(13) div.content_checkout div:nth-child(3) > h1.titulo-dept.title-defaut-interna').text == 'MEU CARRINHO'
+       
 
 
         

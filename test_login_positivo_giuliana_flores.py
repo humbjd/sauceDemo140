@@ -32,5 +32,5 @@ class Test_Login_Positivo():
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_txtPassword').send_keys(senha_valida)
         self.driver.find_element(By.CSS_SELECTOR, '#ContentSite_ibtContinue').click()
         self.driver.find_element(By.CSS_SELECTOR, '#perfil-hidden').click()
-        assert self.driver.find_element(By.CSS_SELECTOR, '#lblWelcome').text == (f'Boa Tarde, {nome_boas_vindas}!')
+        assert self.driver.find_element(By.CSS_SELECTOR, '#lblWelcome').text == (f'Bom Dia, {nome_boas_vindas}!') # Alterar comforme horario do dia
 

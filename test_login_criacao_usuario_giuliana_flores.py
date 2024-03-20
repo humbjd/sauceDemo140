@@ -19,10 +19,12 @@ class Test_Login_Criacao():
       
     def test_criacao_usuario(self):
 
-        nome_fake = 'Quentin Tarantino'
+        # Obs: Não consegui implemetar a biblioteca Faker, apresentou diversos erros seguindo tutoriais no youtube
+
+        nome_fake = 'Quentin Tarantino' 
         nome_boas_vindas = 'Quentin'
-        cpf_fake = '932.966.723-62'
-        email_fake = 'yuma2876@uorak.com'
+        cpf_fake = '932.966.723-62'       # alterar CPF a cada novo teste
+        email_fake = 'yuma2876@uorak.com' # alterar email a cada novo teste
         senha_valida = 'Teste@123'
         CEP_valido = '05206-150'
 
