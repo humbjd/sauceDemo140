@@ -12,6 +12,12 @@ Este é um projeto desenvolvido por humbjd utilizando Python e Pytest para reali
 ## Pré-requisitos
 - Python 3.x instalado no sistema.
 - Bibliotecas necessárias instaladas. Podem ser instaladas através do arquivo `requirements.txt`.
+- Para efetividade dos testes foram utilizados as seguintes ferramentas:
+     Criação de CPF válido:
+  https://www.invertexto.com/gerador-de-cpf
+
+     Criação de e-mail temporário:
+  https://www.invertexto.com/gerador-email-temporario
 
 ## Instalação
 1. Clone este repositório em sua máquina local.
