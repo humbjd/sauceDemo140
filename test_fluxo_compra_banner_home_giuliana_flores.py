@@ -19,7 +19,7 @@ class Test_Fluxo_Compra():
 
     def test_fluxo_compra(self):
 
-        # Obs: Não consegui implemetar a biblioteca Faker, apresentou diversos erros seguindo tutoriais no youtube
+        
 
         nome_boas_vindas = 'Quentin'
         email_fake = 'yuma2876@uorak.com'
